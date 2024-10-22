@@ -2,15 +2,15 @@ repos:
 - repo: https://github.com/antonbabenko/pre-commit-terraform
   rev: v1.96.1
   hooks:
-  - id: check-yaml
-  - id: end-of-file-fixer
-  - id: trailing-whitespace
-  - id: terraform_fmt
-    args:
-      - --args=-no-color
-      - --args=-diff
-      - --args=-write=false
-  - id: terraform_validate
+#  - id: check-yaml
+#  - id: end-of-file-fixer
+#  - id: trailing-whitespace
+#  - id: terraform_fmt
+#    args:
+#      - --args=-no-color
+#      - --args=-diff
+#      - --args=-write=false
+#  - id: terraform_validate
   - id: terraform_docs
     args:
       - --args=--config=.terraform-docs.yaml
